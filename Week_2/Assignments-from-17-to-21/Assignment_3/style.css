@@ -1,0 +1,11 @@
+div{
+    background-color: #bababa;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+}
+.three{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
