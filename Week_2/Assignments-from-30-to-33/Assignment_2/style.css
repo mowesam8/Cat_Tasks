@@ -1,0 +1,41 @@
+div{
+    width: 400px;
+    background-color: #EEE;
+    margin: 20px auto;
+    position: relative;
+    color: black;
+    padding:20px ;
+    border: 1px solid ;
+    border-color: red cornflowerblue ;
+}
+span{
+    background-color: cornflowerblue;
+    color: white;
+    padding: 5px 10px;
+    z-index: 4;
+    position: absolute;
+}
+.top-left,
+.bottom-left{
+    border-right: 1px red solid;
+}
+.top-right,
+.bottom-right{
+    border-left: 1px red solid;
+}
+.top-left{
+    top: -10px;
+    left: -10px;
+}
+.bottom-left{
+    bottom: -10px;
+    left: -10px;
+}
+.top-right{
+    top : -10px;
+    right: -10px;
+}
+.bottom-right{
+    bottom: -10px;
+    right: -10px;
+}

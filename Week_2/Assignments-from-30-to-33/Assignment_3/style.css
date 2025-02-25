@@ -1,0 +1,28 @@
+.parent{
+    width: 400px;
+    margin: 40px auto;
+    list-style-type: none;
+}
+.html,
+.css,
+.js{
+    background-color: #EEE;
+    padding: 10px;
+}
+li{
+    background-color: white;
+    padding: 5px 10px;
+    margin: 5px 0px;
+}
+.html li{
+    list-style-type: decimal;
+}
+.css li{
+    list-style-type:upper-roman;
+}
+.js li{
+    list-style-position: inside;
+}
+.js ul{
+    padding: 10px;
+}
