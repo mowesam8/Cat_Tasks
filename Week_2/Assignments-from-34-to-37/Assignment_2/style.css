@@ -1,0 +1,18 @@
+div{
+    width: 300px;
+    margin: 20px auto;
+    background-color: #EEE;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    position: relative;
+}
+div::first-letter{
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    position: absolute;
+    margin-left: -20px;
+    margin-right: 10px;
+}
