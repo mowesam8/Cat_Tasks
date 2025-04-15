@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid{
+    width: 650px;
+    height: 525px;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    gap: 50px;
+}
+.grid .e,
+.grid .l{
+    display: grid;
+    grid-template-columns: repeat(4,75px);
+    grid-template-rows: repeat(7,75);
+    position: relative;
+}
+.grid .e div,
+.grid .l div{
+    background-color: #323234;
+}
+.e1{
+    grid-area: 1/1/8/1;
+}
+.e2{
+    grid-area: 1/2/2/5;
+}
+.e3{
+    grid-area: 4/2/5/5;
+}
+.e4{
+    grid-area: 7/2/8/5;
+}
+.l1{
+    grid-area: 1/1/8/2;
+}
+.l2{
+    grid-area: 7/2/8/5;
+}
+.e::after{
+    content: "";
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    background-color: #fea604;
+    right: 10px;
+    top: 10px;
+    animation: e-move 10s linear ;
+    -webkit-animation: e-move 10s linear ;
+    animation-delay: 1s;
+}
+.l::after{
+    content: "";
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    animation: l-move 5s linear;
+    -webkit-animation: l-move 5s linear;
+    animation-delay: 12s;
+}
+@keyframes e-move{
+    0%{
+        right: 10px;
+        top: 10px;
+    }
+    10%{
+        top : 10px;
+        right: 235px;
+    }
+    20%{
+        right: 235px;
+        top: 235px;
+    }
+    30%{
+        right: 10px;
+        top:  235px;
+    }
+    40%{
+        right: 235px;
+        top:  235px;
+    }
+    50%{
+        right: 235px;
+        top: 460px;
+    }
+    60%{
+        right: 10px;
+        top: 460px;
+    }
+    70%{
+        right: 235px;
+        top: 460px;
+    }
+    90%{
+        right: 235px;
+        top: 10px;
+    }
+    100%{
+        right: 10px;
+        top: 10px;
+    }
+}
+@keyframes l-move{
+    0%{
+        right: 10px;
+        top: 460px;
+        background-color: #fea604;
+    }
+    5%{
+        right: 10px;
+        top: 460px;
+        background-color: #fea604;
+    }
+    25%{
+        right: 235px;
+        top: 460px;
+        background-color: #fea604;
+    }
+    75%{
+        right: 235px;
+        top: 10px;
+        background-color: #fea604;
+        opacity: 1;
+    }
+    100%{
+        right: 235px;
+        top: 10px;
+        background-color: #fea604;
+        opacity: 0;
+    }
+}

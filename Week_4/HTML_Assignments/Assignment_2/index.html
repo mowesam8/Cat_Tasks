@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Califoronia Backyard Birds</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: #DDD;
+        }
+        .container{
+            width: 800px;
+            height: 600px;
+            background-color: white;
+            display: grid;
+            grid-template-rows: repeat(7,auto);
+            grid-template-columns: 1fr 1fr;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50% ,-50%);
+            padding: 40px;
+            gap: 10px;
+            font-size: 25px;
+        }
+        .face,
+        .twitter{
+            display: flex;
+            align-items: center;
+            width: 95%;
+            height:fit-content;
+            padding: 0 5px;
+            color: white;
+            font-weight: bold;
+            margin: 10px auto;
+        }
+        img{
+            height: 35px;
+            margin: 10px;
+        }
+        .face p,
+        .twitter p{
+            margin: 10px 20px;
+        }
+        .face{
+            background-color: #1975f2;
+        }
+        .twitter{
+            background-color: #00a1f6;
+        }
+        .or{
+            grid-column: span 2;
+            background-color: #EEE;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            margin: 0 auto;
+        }
+        .user,
+        .password{
+            grid-column: span 2;
+            margin: 5px auto;
+            display: flex;
+            height: fit-content;
+        }
+        .user input,
+        .password input{
+            width: 700px;
+            padding: 10px;
+            margin: 0 auto;
+        }
+        .reset{
+            text-align: end;
+        }
+        .reset a{
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.5);
+        }
+        .reset a:hover{
+            color: black;
+        }
+        .login{
+            grid-column: span 2;
+            background-color: #1975f2;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .signup{
+            grid-column: span 2;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.5);
+            margin: 10px;
+        }
+        .signup a{
+            text-decoration: none;
+            color:#00a1f6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="face" style="cursor: pointer;">
+            <img src="images/face.jpg" alt="">
+            <p>Login to Fecebook</p>
+        </div>
+        <div class="twitter" style="cursor: pointer;">
+            <img src="images/twitter.jpg" alt="">
+             <p>Login to Twitter</p>
+        </div>
+        <div class="or">Or</div>
+        <div class="user">
+            <input type="text" placeholder="Username" name="Username">
+        </div>
+        <div class="password">
+            <input type="password" name="password" placeholder="Password">
+        </div>
+        <div class="check" style="margin-left: 10px;">
+            <input type="checkbox" id="check">
+            <label for="check" style="margin-left: 10px; color: rgba(0, 0, 0, 0.5);"> Keep me signed in</label>
+        </div>
+        <div class="reset">
+            <a href="">Forget Your Password?</a>
+        </div>
+        <div class="login" style="cursor: pointer;">
+            Login
+        </div>
+        <div class="signup">
+            Not a member ? <a href="">Sign up Now!</a>
+        </div>
+    </div>
+</body>
+</html>

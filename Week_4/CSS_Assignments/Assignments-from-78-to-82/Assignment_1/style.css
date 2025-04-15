@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+div.main.red{
+    color: red;
+}

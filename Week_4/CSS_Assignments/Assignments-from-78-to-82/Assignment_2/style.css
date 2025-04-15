@@ -1,0 +1,8 @@
+*{
+    box-sizing: border-box;
+    font-size: 30px;
+    font-weight: bold;
+}
+div :nth-child(2){
+    color: red;
+}

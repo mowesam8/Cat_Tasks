@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+div:nth-child(1) div:nth-last-of-type(2){
+    color: red;
+}

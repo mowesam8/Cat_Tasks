@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    justify-content: space-evenly;
+}
+/* الشاشات الصغيرة والموبايلات  */
+.parent div{
+    text-align: center;
+    color: black;
+    width: 100%;
+    margin: 10px 0;
+    background-color: #EEE;
+}
+
+/* الشاشات المتوسطة  */
+@media (min-width: 992px) {
+    .parent div{
+        width: calc(50% - 10px);
+    }
+    .parent div h3{
+        color: #fb3232;
+    }
+}
+/* الشاشات الكبيرة  */
+@media (min-width: 1200px) {
+    .parent div{
+        width: calc(25% - 10px);
+    }
+    .parent div h3{
+        color: #3eada3;
+    }
+}
